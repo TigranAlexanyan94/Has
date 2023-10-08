@@ -1,0 +1,33 @@
+.up-down {
+  max-width: 800px;
+  height: 100%;
+  background-color: #ffffff8c;
+  text-align: center;
+  backdrop-filter: blur(30px);
+  border-radius: 6px;
+}
+.up-down .title {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Montserrat";
+}
+.up-down .slick-list {
+  color: #5e5e5e;
+  font-size: 20px;
+}
+.up-down .slick-current {
+  font-size: 30px;
+  color: #000000;
+}
+.up-down .slick-track {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+/*# sourceMappingURL=UpDownSlider.css.map */

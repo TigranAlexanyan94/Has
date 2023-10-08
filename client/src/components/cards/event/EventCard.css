@@ -1,0 +1,113 @@
+.event-card {
+  box-shadow: 0 4px 8px 0 #00000033;
+  background-color: #ffffffe8;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  width: 528px;
+  font-family: "sans-serif";
+}
+.event-card img {
+  box-shadow: 0 4px 8px 0 #00000033;
+  opacity: 81%;
+  margin: 15px;
+  width: 45%;
+  border-radius: 10px;
+}
+.event-card .event-info {
+  font-size: 20px;
+}
+.event-card .event-info h2 {
+  height: 48px;
+  border-bottom: 2px solid #000000;
+  display: flex;
+  align-items: center;
+}
+.event-card .event-info .description {
+  display: none;
+}
+.event-card .event-info .day-time {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Dangrek';
+  display: flex;
+  align-items: center;
+}
+.event-card .event-info .day-time .day {
+  font-weight: bold;
+  font-size: 30px;
+}
+.event-card .event-info .day-time .time {
+  margin-left: 15px;
+  width: 80px;
+  height: 25px;
+  border-left: 2px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+.active .event-card {
+  width: 446px;
+  height: 680px;
+  flex-direction: column;
+  font-family: "sans-serif";
+}
+.active .event-card img {
+  box-shadow: 0 4px 8px 0 #00000033;
+  opacity: 81%;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+}
+.active .event-card .event-info {
+  font-size: 20px;
+}
+.active .event-card .event-info h2 {
+  font-size: 36px;
+  color: #212121;
+  padding: 20px;
+  justify-content: center;
+  border-bottom: none;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-family: "sans-serif";
+}
+.active .event-card .event-info .description {
+  display: block;
+}
+.active .event-card .event-info .description p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.active .event-card .event-info .description .music-type {
+  height: 55px;
+  width: 180px;
+  border-top: 2px solid #000000;
+  display: flex;
+  align-items: center;
+}
+.active .event-card .event-info .day-time {
+  justify-content: space-around;
+}
+.active .event-card .event-info .day-time .day {
+  width: 45%;
+  height: 40px;
+  border-right: 4px solid white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.active .event-card .event-info .day-time .time {
+  margin-left: 15px;
+  width: 80px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: none;
+}
+/*# sourceMappingURL=EventCard.css.map */

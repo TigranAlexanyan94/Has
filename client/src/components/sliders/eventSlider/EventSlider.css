@@ -1,0 +1,71 @@
+.prev-next .slick-slide {
+  display: flex;
+  align-items: baseline;
+  align-content: space-around;
+  align-content: center;
+  justify-content: center;
+}
+.prev-next .slick-current .event-card {
+  width: 446px;
+  height: 680px;
+  flex-direction: column;
+  font-family: "Montserrat";
+}
+.prev-next .slick-current .event-card img {
+  box-shadow: 0 4px 8px 0 #00000033;
+  opacity: 81%;
+  width: 100%;
+  height: 297px;
+  border-radius: 10px;
+  margin: 0;
+}
+.prev-next .slick-current .event-card .event-info h2 {
+  font-size: 36px;
+  color: #212121;
+  padding: 20px;
+  justify-content: center;
+  border-bottom: none;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+}
+.prev-next .slick-current .event-card .event-info .description {
+  display: block;
+  margin: 25px;
+  margin-bottom: 70px;
+}
+.prev-next .slick-current .event-card .event-info .description p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.prev-next .slick-current .event-card .event-info .description .music-type {
+  height: 55px;
+  width: 180px;
+  border-top: 2px solid #565656d6;
+  display: flex;
+  align-items: center;
+}
+.prev-next .slick-current .event-card .event-info .day-time {
+  font-size: 36px;
+  justify-content: space-around;
+}
+.prev-next .slick-current .event-card .event-info .day-time .day {
+  width: 50%;
+  height: 40px;
+  border-right: 4px solid #00000033;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.prev-next .slick-current .event-card .event-info .day-time .time {
+  width: 80px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: none;
+}
+/*# sourceMappingURL=EventSlider.css.map */

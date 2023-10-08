@@ -1,0 +1,87 @@
+@backgroundColor: #ffffffe8;
+@borderColor: #565656d6;
+@imgBorderColor: #FFFFFF;
+@shadowColor: #00000033;
+@priceColor: #008000;
+@font: "Montserrat";
+
+.prev-next {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff52;
+    backdrop-filter: blur(30px);
+    height: 450px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    p {
+        display: none;
+    }
+
+    .slick-initialized {
+        width: 600px;
+    }
+
+    .slick-slide {
+        display: flex;
+    }
+
+    .slick-track {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slick-current {
+        font-family: @font;
+        margin-bottom: 5px;
+
+        p {
+            display: block;
+        }
+
+        .card {
+            width: 310px;
+            height: 420px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin-top: -100px;
+        }
+
+        .info {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .price {
+            display: block;
+            display: flex;
+            color: @priceColor;
+            justify-content: flex-end;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        h2 {
+            justify-content: center;
+            font-size: 36px;
+            height: 80px;
+            font-weight: bold;
+        }
+
+        .discription {
+            display: block;
+            padding-top: 25px;
+            display: flex;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}

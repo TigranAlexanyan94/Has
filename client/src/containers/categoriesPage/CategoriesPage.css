@@ -1,0 +1,80 @@
+.categories-page {
+  background-image: url("../../assets/images/background/background_categories.svg");
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-size: 110%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+.categories-page .main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.categories-page .main a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.categories-page .main a:hover {
+  opacity: 0.5;
+}
+.categories-page .main .music-hall {
+  margin-top: 220px;
+}
+.categories-page .main .music-hall h1 {
+  margin-left: 110px;
+}
+.categories-page .main .music-hall .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.categories-page .main .music-hall .icon hr {
+  width: 190px;
+  border: 1px solid #ffffffb0;
+  border-radius: 2px;
+}
+.categories-page .main .bar {
+  margin-top: 220px;
+}
+.categories-page .main .bar h1 {
+  margin-left: 180px;
+}
+.categories-page .main .bar .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.categories-page .main .bar .icon hr {
+  width: 190px;
+  border: 1px solid #ffffffb0;
+  border-radius: 2px;
+}
+.categories-page .main .resturant h1 {
+  margin-left: 110px;
+}
+.categories-page .main .resturant .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.categories-page .main .resturant .icon hr {
+  width: 190px;
+  border: 1px solid #ffffffb0;
+  border-radius: 2px;
+}
+.categories-page .main h1 {
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bolder;
+}
+.categories-page .main .logo img {
+  width: 90vh;
+  height: 40vh;
+  margin-bottom: 112px;
+}
+/*# sourceMappingURL=CategoriesPage.css.map */

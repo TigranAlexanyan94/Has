@@ -1,0 +1,351 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Has Hotell",
+    "description": "web app for TV in hotel",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:7777",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Users",
+      "description": "API for users in the system"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "securityDefinitions": {
+    "bearerAuth": {
+      "name": "Authorization",
+      "in": "header",
+      "type": "apiKey",
+      "scheme": "Bearer",
+      "bearerFormat": "JWT",
+      "description": "JWT Authorization header"
+    }
+  },
+
+  "security": [{ "bearerAuth": [] }],
+
+  "paths": {
+    "/login": {
+      "post": {
+        "tags": ["Users"],
+        "summary": "Get all users in system",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "user",
+            "password": "password"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    },
+    "/category": {
+      "get": {
+        "tags": ["Category"],
+        "summary": "Get all Categories in system",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful"
+          },
+          "500": {
+            "description": "Categories not found"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Category"],
+        "summary": "Create new category",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "title"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful"
+          },
+          "500": {
+            "description": "Not created"
+          }
+        }
+      }
+    },
+    "/category/:name": {
+      "get": {
+        "tags": ["Category"],
+        "summary": "Get  Category by name",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "title"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful."
+          },
+          "500": {
+            "description": "Category not found."
+          }
+        }
+      }
+    },
+    "/category/{id}": {
+      "put": {
+        "tags": ["Category"],
+        "summary": "Updated Category",
+        "parameters": [{ "name": "title", "in": "path" }],
+        "responses": {
+          "200": {
+            "description": "Category was updated successfully."
+          },
+          "500": {
+            "description": "Cannot update category."
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Category"],
+        "summary": "Delate category",
+        "parameters": [{ "name": "id", "in": "path" }],
+        "responses": {
+          "200": {
+            "description": "Category was deleted successfully!"
+          },
+          "400": {
+            "description": "Cannot delete category maybe category was not found!"
+          },
+          "500": {
+            "description": "Could not delete category."
+          }
+        }
+      }
+    },
+    "/product": {
+      "get": {
+        "tags": ["Product"],
+        "summary": "Get all products in system.",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful get all products."
+          },
+          "500": {
+            "description": "Products not found."
+          }
+        }
+      },
+      "post": {
+        "tags": ["Product"],
+        "summary": "Create new product",
+        "parameters": [
+          {
+            "name": "title",
+            "image_url": "image_url",
+            "price": "price",
+            "description": "description",
+            "status": "status",
+            "categoryId": "req.body.categoryId",
+            "in": "body"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful created new Product."
+          },
+          "500": {
+            "description": "Not created."
+          }
+        }
+      }
+    },
+    "/product/{id}": {
+      "get": {
+        "tags": ["Product"],
+        "summary": "Get all refs in system",
+        "parameters": [{ "name": "id", "in": "path" }],
+        "responses": {
+          "200": {
+            "description": "Successfully get all products."
+          },
+          "500": {
+            "description": "Products not found."
+          }
+        }
+      },
+      "put": {
+        "tags": ["Product"],
+        "summary": "Updated Product",
+        "parameters": [
+          {
+            "name": "title",
+            "image_url": "image_url",
+            "price": "price",
+            "description": "description",
+            "status": "status",
+            "in": "body"
+          },
+          { "name": "id", "in": "path" }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product was updated successfully."
+          },
+          "500": {
+            "description": "Cannot update Product. "
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Product"],
+        "summary": "Delate product",
+        "parameters": [{ "name": "id", "in": "path" }],
+        "responses": {
+          "200": {
+            "description": "Product was deleted successfully!"
+          },
+          "400": {
+            "description": "Cannot delete product maybe category was not found!"
+          },
+          "500": {
+            "description": "Could not delete product."
+          }
+        }
+      }
+    },
+    "/product/title": {
+      "get": {
+        "tags": ["Product"],
+        "summary": "Get  Product by name",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "title"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully get product."
+          },
+          "500": {
+            "description": "Product not found."
+          }
+        }
+      }
+    },
+    "/event": {
+      "get": {
+        "tags": ["Event"],
+        "summary": "Get all events in system.",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful get all events."
+          },
+          "500": {
+            "description": "Events not found."
+          }
+        }
+      }
+    },
+    "/event/title": {
+      "get": {
+        "tags": ["Event"],
+        "summary": "Get  Event by name",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "title"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully get event."
+          },
+          "500": {
+            "description": "Event not found."
+          }
+        }
+      },
+      "post": {
+        "tags": ["Event"],
+        "summary": "Create new event",
+        "parameters": [
+          {
+            "name": "title",
+            "image_url": "image_url",
+            "price": "price",
+            "description": "description",
+            "status": "status",
+            "in": "body"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful created new Event."
+          },
+          "500": {
+            "description": "Not created."
+          }
+        }
+      },
+      "put": {
+        "tags": ["Event"],
+        "summary": "Updated Event",
+        "parameters": [
+          {
+            "name": "title",
+            "image_url": "image_url",
+            "price": "price",
+            "description": "description",
+            "status": "status",
+            "in": "body"
+          },
+          { "name": "id", "in": "path" }
+        ],
+        "responses": {
+          "200": {
+            "description": "Event was updated successfully."
+          },
+          "500": {
+            "description": "Cannot update Event. "
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Event"],
+        "summary": "Delate event",
+        "parameters": [{ "name": "id", "in": "path" }],
+        "responses": {
+          "200": {
+            "description": "Event was deleted successfully!"
+          },
+          "400": {
+            "description": "Cannot delete event maybe event was not found!"
+          },
+          "500": {
+            "description": "Could not delete event."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@backgroundColor: #ffffffe8;
+@borderColor: #565656d6;
+@imgBorderColor: #FFFFFF;
+@shadowColor: #00000033;
+@priceColor: #008000;
+@font: "Montserrat";
+
+.prev-next {
+
+    .slick-slide {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        align-content: space-around;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .slick-current {
+
+        .event-card {
+            width: 446px;
+            height: 680px;
+            flex-direction: column;
+            font-family: @font;
+
+            img {
+                box-shadow: 0 4px 8px 0 @shadowColor;
+                opacity: 81%;
+                width: 100%;
+                height: 297px;
+                border-radius: 10px;
+                margin: 0;
+            }
+
+            .event-info {
+
+                h2 {
+                    font-size: 36px;
+                    color: #212121;
+                    padding: 20px;
+                    justify-content: center;
+                    border-bottom: none;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    font-family: @font;
+                }
+
+                .description {
+                    display: block;
+                    margin: 25px;
+                    margin-bottom: 70px;
+
+                    p {
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-family: sans-serif;
+                    }
+
+                    .music-type {
+                        height: 55px;
+                        width: 180px;
+                        border-top: 2px solid @borderColor;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .day-time {
+                    font-size: 36px;
+                    justify-content: space-around;
+
+                    .day {
+                        width: 50%;
+                        height: 40px;
+                        border-right: 4px solid @shadowColor;
+                        display: flex;
+                        align-items: center;
+                        font-weight: bold;
+                        margin-left: 30px;
+                    }
+
+                    .time {
+                        width: 80px;
+                        height: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

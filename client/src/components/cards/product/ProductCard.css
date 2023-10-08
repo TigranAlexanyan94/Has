@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.card {
+  margin-top: 100px;
+  box-shadow: 0 4px 8px 0 #00000033;
+  background-color: #ffffffe8;
+  width: 270px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  font-family: "Montserrat";
+}
+.card .info h2 {
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.card .info hr {
+  margin-left: 43%;
+  margin-right: 43%;
+  border: 1px solid #565656d6;
+}
+.card .price,
+.card .discraption {
+  display: none;
+}
+.card img {
+  margin-top: -70px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 25px solid #FFFFFF;
+  box-shadow: 0 4px 8px 0 #00000033;
+}
+.active {
+  font-family: "Montserrat";
+}
+.active .card {
+  margin-top: 110px;
+  width: 315px;
+  height: 410px;
+}
+.active img {
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+}
+.active .info {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.active .price {
+  display: block;
+  display: flex;
+  color: #008000;
+  justify-content: flex-end;
+  font-size: 36px;
+  font-weight: bold;
+}
+.active h2 {
+  justify-content: center;
+  font-size: 36px;
+  height: 80px;
+  font-weight: bold;
+}
+.active .discraption {
+  display: block;
+  padding-top: 25px;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+}
+/*# sourceMappingURL=ProductCard.css.map */

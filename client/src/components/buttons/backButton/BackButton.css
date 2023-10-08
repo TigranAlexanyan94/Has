@@ -1,0 +1,17 @@
+.back-btn {
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background-color: #ffffff8e;
+  width: 100px;
+  height: 100px;
+  backdrop-filter: blur(68px);
+}
+.back-btn img {
+  margin-top: 55px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.back-btn img:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=BackButton.css.map */

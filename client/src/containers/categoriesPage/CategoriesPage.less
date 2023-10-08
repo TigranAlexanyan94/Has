@@ -1,0 +1,103 @@
+@font: "Montserrat";
+@borderColor: #ffffffb0;
+
+.categories-page {
+    background-image: url("../../assets/images/background/background_categories.svg");
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-size: 110%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        a:hover {
+            opacity: 0.5;
+        }
+
+        .music-hall {
+            margin-top: 220px;
+
+            h1 {
+                margin-left: 110px;
+            }
+
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                hr {
+                    width: 190px;
+                    border: 1px solid @borderColor;
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        .bar {
+            margin-top: 220px;
+
+            h1 {
+                margin-left: 180px;
+            }
+
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                hr {
+                    width: 190px;
+                    border: 1px solid @borderColor;
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        .resturant {
+
+            h1 {
+                margin-left: 110px;
+            }
+
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                hr {
+                    width: 190px;
+                    border: 1px solid @borderColor;
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        h1 {
+            font-family: @font;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .logo {
+            img {
+                width: 90vh;
+                height: 40vh;
+                margin-bottom: 112px;
+            }
+        }
+    }
+}

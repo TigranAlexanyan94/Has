@@ -1,0 +1,41 @@
+@backgroundColor: #ffffff8c;
+@black: #000000;
+@fontColor: #5e5e5e;
+@font: "Montserrat";
+
+.up-down {
+  max-width: 800px;
+  height: 100%;
+  background-color: @backgroundColor;
+  text-align: center;
+  backdrop-filter: blur(30px);
+  border-radius: 6px;
+
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: @font;
+  }
+
+  .slick-list {
+    color: @fontColor;
+    font-size: 20px;
+  }
+
+  .slick-current {
+    font-size: 30px;
+    color: @black;
+  }
+
+  .slick-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,85 @@
+@borderRadius: 5px;
+@marginBottom: 20px;
+@fontSize: 15px;
+@red: #fd7c73;
+@white: #ffffff;
+@border: 1px solid;
+
+.Wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login {
+  width: 30%;
+  padding: 20px;
+  border-radius: @borderRadius;
+  box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 0%), 0px 0px 12px rgb(0 0 0 / 10%);
+  background: @white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0 1px 1px @white;
+  padding-bottom: 20px;
+}
+
+// .LoginForm {
+//   width: 100%;
+// }
+
+#usernameField, #passwordField {
+  width: 96%;
+  height: 30px;
+  margin-bottom: @marginBottom;
+  padding: 5px;
+  border-radius: @borderRadius;
+  outline: none;
+}
+
+#usernameField[type=text], #passwordField[type=password] {
+  font-size: @fontSize;
+} 
+
+#login {
+  font-size: @fontSize;
+  cursor: pointer;
+  height: 37px;
+  margin-bottom: @marginBottom;
+  width: 100%;
+  color: @white;
+  background-color: #5E5BFF;
+  border: none;
+  border-radius: @borderRadius;
+}
+
+#login:hover {
+  box-shadow: 0px 0px 3px rgb(0 0 0 / 30%), 0px 0px 12px rgb(0 0 0 / 22%);
+}
+
+.error {
+  color: @red;
+  font-size: @fontSize;
+  text-align: left;
+  margin-top: -15px;
+  margin-bottom: @marginBottom;
+}
+
+.border {
+  border: @border lightgrey;
+}
+
+.border-error {
+  border: @border @red;
+}
+
+.checkBox {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
